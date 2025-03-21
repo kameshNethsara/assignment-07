@@ -12,17 +12,17 @@ $(document).ready(function () {
         boxes.css("background-color", "white");
 
         // Set colors based on the pattern
-        boxes.eq(currentIndex).css("background-color", "red"); // Current box - Red
+        boxes.eq(currentIndex).css("background-color", "#a15477"); // Current box - Red
         
         let prevIndex1 = (currentIndex - 1 + boxes.length) % boxes.length;
         let nextIndex1 = (currentIndex + 1) % boxes.length;
-        boxes.eq(prevIndex1).css("background-color", "pink"); // Left box add color pink
-        boxes.eq(nextIndex1).css("background-color", "violet"); // Right box add color violet
+        boxes.eq(prevIndex1).css("background-color", "#d674cd"); // Left box add color pink
+        boxes.eq(nextIndex1).css("background-color", "#8d3048"); // Right box add color violet
         
         let prevIndex2 = (currentIndex - 2 + boxes.length) % boxes.length;
         let nextIndex2 = (currentIndex + 2) % boxes.length;
-        boxes.eq(prevIndex2).css("background-color", "gray"); // Two boxes left add color gray
-        boxes.eq(nextIndex2).css("background-color", "brown"); // Two boxes right add color brown
+        boxes.eq(prevIndex2).css("background-color", "#ba59a3"); // Two boxes left add color gray
+        boxes.eq(nextIndex2).css("background-color", "a13b5f"); // Two boxes right add color brown
 
         // Move the light in the correct direction
         currentIndex += direction;
