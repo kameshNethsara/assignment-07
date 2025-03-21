@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 12px;
+}
+.box{
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+}
+.button-container{
+   
+}
+#startBtn{
+    background-color: rgb(17, 185, 17);
+    color: white;
+    margin-right: 20px;
+
+    width: 50px;
+    height: 30px;
+
+}
+#stopBtn{
+    background-color: rgb(201, 24, 24);
+    color: white;
+
+    width: 50px;
+    height: 30px;
+}
