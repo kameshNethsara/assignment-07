@@ -5,6 +5,8 @@ $(document).ready(function () {
 
     let currentIndex = 0;
 
+    let intervalId = null;
+
     function changeColor() {
         // boxes.forEach((box) => {
         //     box.style.backgroundColor = "white";
@@ -53,6 +55,24 @@ $(document).ready(function () {
 
     }
 
-    setInterval(changeColor, 1000);
+    // setInterval(changeColor, 1000);
+    
+    // Start Animation
+    function startAnimation() {
+        if (!intervalId) { // Check if function is already running
+            intervalId = setInterval(changeColor, 1000);
+        }
+    }
+
+    // Stop Animation
+    function stopAnimation() {
+        clearInterval(intervalId);
+        intervalId = null;
+    }
+
+    // document.getElementById("startBtn").addEventListener("click", startAnimation);
+    // document.getElementById("stopBtn").addEventListener("click", stopAnimation);
+    $("#startBtn").click(startAnimation);
+    $("#stopBtn").click(stopAnimation);
  
 });
